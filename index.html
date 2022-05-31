@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascometro</title>
+    <link rel="shortcut icon" href="IMG/churrasco.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,500&display=swap"
+        rel="stylesheet">
+        
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="grid">
+            <!-- area do texto de imagem -->
+
+            <div class="text-content">
+
+                <h1>Saiba quanta comida e bebida vai precisar</h1>
+                <img src="IMG/outdoor-party-animate.svg" alt="animated image">
+
+            </div>
+
+            <!-- area de calculo -->
+
+            <div class="box-calculo">
+                
+                <img src="IMG/banner-churrascometro-v3.png" alt="banner">
+                <div class="form">
+
+                    <div class="input-block">
+                        <label for="adultos">Quantidade de adultos</label>
+                        <input type="number" name="adultos" id="adultos" placeholder="adultos">
+                    </div>
+
+                    <div class="input-block">
+                        <label for="criancas">Quantidade de crianças</label>
+                        <input type="number" name="crancas" id="criancas" placeholder="crianças">
+                    </div>
+
+                    <div class="input-block">
+                        <label for="duracao">Duração</label>
+                        <input type="number" name="duracao" id="duracao" placeholder="duração">
+                    </div>
+
+                    <div class="input-block" id="input-block-hide">
+                        <button id="hiden" onclick="calcular()">Calcular</button>
+                    </div>
+
+                </div>
+                <div id="resultado"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
